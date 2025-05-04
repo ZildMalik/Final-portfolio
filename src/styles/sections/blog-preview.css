@@ -1,0 +1,27 @@
+.blog-preview {
+  padding: var(--spacing-xxl) 0;
+}
+
+.blog-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.blog-preview-more {
+  text-align: center;
+  margin-top: var(--spacing-lg);
+}
+
+@media (max-width: 992px) {
+  .blog-preview-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 576px) {
+  .blog-preview-grid {
+    grid-template-columns: 1fr;
+  }
+}
