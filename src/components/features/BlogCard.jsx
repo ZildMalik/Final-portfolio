@@ -59,7 +59,6 @@ const BlogCard = ({ post, index }) => {
           <div className="blog-card-footer">
           </div>
         </div>
-        
       </Link>
     </article>
   );

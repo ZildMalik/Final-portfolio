@@ -145,7 +145,7 @@ const convertMarkdownToHTML = (markdown) => {
   
   // Convert headings
   html = html.replace(/^# (.*$)/gm, '<h1>$1</h1>');
-  html = html.replace(/^## (.*$)/gm, '<h2>$2</h2>');
+  html = html.replace(/^## (.*$)/gm, '<h2>$1</h2>'); // Fixed: Changed $2 to $1
   html = html.replace(/^### (.*$)/gm, '<h3>$1</h3>');
   
   // Convert paragraphs
