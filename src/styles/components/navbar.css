@@ -137,3 +137,34 @@
     padding: var(--spacing-sm) 0;
   }
 }
+.cv-button-container {
+  margin-left: var(--spacing-md);
+}
+
+.cv-button {
+  display: inline-block;
+  background-color: var(--color-orange);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all var(--transition-fast);
+  border: 2px solid var(--color-orange);
+}
+
+.cv-button:hover {
+  background-color: transparent;
+  color: var(--color-orange);
+}
+
+@media (max-width: 768px) {
+  .cv-button-container {
+    margin-left: 0;
+    margin-top: var(--spacing-md);
+  }
+
+  .cv-button {
+    width: 100%;
+    text-align: center;
+  }
+}
